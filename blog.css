@@ -262,6 +262,11 @@ a.btn-outline-primary:hover {
 .carousel-control-prev, .carousel-control-next {
   width: 10%;
 }
+
+.carousel-indicators li {
+  background-color: #003c85;
+}
+
 .bi {
 font-size: 2em;
 color: #003c85;
