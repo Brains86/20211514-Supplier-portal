@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -101,9 +118,9 @@
                        
               <p>Chaque utilisateur de ANWB Reizen recevra un e-mail (en anglais) contenant un lien d'activation pour activer votre compte dans le Supplier Portal via <a href="https://supplier.anwbreizen.nl/Account/" target="_blank">. Si vous n'avez pas reçu cet e-mail d'activation, veuillez vérifier votre boîte de spam pour en être sûr.</p>
 
-              <p>Si vous n'avez pas reçu d'e-mail, veuillez envoyer un e-mail à <a href="mailto:supplierportal@anwbreizen.nl">supplierportal@anwbreizen.nl</a>.</p>
+              <p>Si vous n'avez pas reçu d'e-mail, veuillez envoyer un e-mail à <a href="mailto:operations.team5@anwbreizen.nl">operations.team5@anwbreizen.nl</a>.</p>
 
-              <p>En principe, un seule compte est créé par fournisseur. Les informations sont confidentielles, nous partons donc du principe qu'elles seront traitées avec précaution. Vous ne pouvez vous connecter au Supplier Portal qu'avec une seule adresse e-mail spécifique.</p>
+              <p>Un seule compte est créé par fournisseur. Les informations sont confidentielles, nous partons donc du principe qu'elles seront traitées avec précaution. Vous ne pouvez vous connecter au Supplier Portal qu'avec l’adresse e-mail activée pour le Portal.</p>
 
               <img src="assets/inloggen.png">
             </div>

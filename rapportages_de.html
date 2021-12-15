@@ -48,7 +48,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
 
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -103,10 +119,8 @@
           <h1>Berichte und “Roominglists“ </h1>
                    
           <p>Das Supplier Portal gibt einen Überblick über verschiedene Berichte. Sie finden hier Reservierungslisten und Anfragen (Reports), aber auch Zimmerbelegungslisten (Roominglists). </p>
-          <p>Je nach den Vereinbarungen, die wir mit Ihnen getroffen haben, haben Sie Zugriff zu:</p>
-          <p>-  den Berichten (“Reports“) oder <br>
-          - den Zimmerbelegungslisten (“Rooming lists“). </p>
-
+          <p>Je nach den Vereinbarungen, die wir mit Ihnen getroffen haben, haben Sie Zugriff zu einem der beiden.</p>
+          
           <p>Es ist nicht möglich, mit beiden Systemen zu arbeiten. Sie arbeiten entweder mit Berichten oder mit Rooming Lists.</p>
           
           <h2>A.  Berichte</h2>
@@ -115,7 +129,7 @@
           <p>-  Buchungslisten (“Reservation lists“) und <br>
           - Anfragen (“Requests“). </p>
 
-          <p>Der Name des Dokuments enthält das Datum, an dem es freigegeben worden ist. Der Name „ReservationLists20210122“ verrät uns zum Beispiel, dass diese Buchungsliste am 22. Januar 2021 bereitgestellt worden ist. Die anderen Spalten geben Ihnen weitere Informationen über die Dokumentengröße, das Ausgabedatum und das früheste Reservierungsdatum innerhalb dieser Reservierungsliste oder Anfrage. Das Häkchen in der letzten Spalte zeigt an, ob das Dokument von Ihnen oder Ihrem Kollegen geöffnet wurde. Wenn Sie auf eine dieser fünf Überschriften klicken, können Sie die Liste nach Name, Größe, Datum, frühestem Reservierungsdatum oder danach, ob die Datei geöffnet wurde oder nicht, sortieren.</p>
+          <p>Der Name des Dokuments enthält das Datum, an dem es freigegeben worden ist. Der Name „ReservationLists20210122“ verrät uns zum Beispiel, dass diese Buchungsliste am 22. Januar 2021 bereitgestellt worden ist. Die anderen Spalten geben Ihnen weitere Informationen über die Dokumentengröße, das Ausgabedatum und das früheste Reservierungsdatum innerhalb dieser Reservierungsliste oder Anfrage. Das Häkchen in der letzten Spalte zeigt an, ob das Dokument von Ihnen oder Ihrem Kollegen geöffnet wurde. Wenn Sie auf eine dieser fünf Überschriften klicken, können Sie die Liste nach Name, Größe, Datum, frühestem Reservierungsdatum oder danach, ob die Datei geöffnet wurde oder nicht, sortieren.<i>(Hinweis: Es wird noch daran gearbeitet, leider funktioniert es im Moment noch nicht).</i></p>
 
           <p>Wenn über unsere Website eine neue Buchung vorgenommen worden ist, bei der ein oder mehrere Leistungselemente von Ihnen angefordert werden müssen, erhalten Sie automatisch eine “Request“ (Anfrage). Über die „ANWB Messages“- wird Ihnen dies auch mitgeteilt. Sobald Sie dieses PDF-Dokument öffnen, sehen Sie auf der ersten Seite eine automatische Nachricht mit speziellen Anweisungen für Sie. 
           </p>
@@ -129,6 +143,8 @@
           - Zusatzinformationen, sofern zutreffend<br>
           </p>
 
+          <p>Wenn Sie die Reservierung über "Reservations" oder "Individuals" öffnen, können Sie die Schaltfläche "Approve Requests" verwenden, um die Reservierung zu bestätigen. Es ist auch möglich, die Anfrage pro Element zu bestätigen oder abzulehnen. Es wird eine automatische Nachricht an uns gesendet. Bitte beachten Sie, dass die Anfrage nach ihrer Bestätigung zunächst manuell von uns bearbeitet werden muss. Bis dahin ist die Reservierung noch als Anfrage sichtbar.</p>
+          
           <p>Bei Buchungen über unsere Website, für die keines der Elemente angefordert werden muss (weil sie bereits auf der Grundlage unseres Vertrags bestätigt wurden), wird Ihnen eine "Reservierungsliste" zugesandt.</p>
                   
           <p>Diese “Reservationlist“ hält Sie über die neuen erfolgten Buchungen sowie geänderte und stornierte Buchungen auf dem Laufenden. Diese Liste enthält dieselben Informationen wie die oben bereits erwähnte “Request“, kann jedoch mehrere Buchungen enthalten, während ein “Request“ nur eine einzelne Buchung enthält. </p>

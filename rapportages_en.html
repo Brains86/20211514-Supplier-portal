@@ -48,6 +48,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+        <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
 
   </head>
@@ -103,10 +120,8 @@
           <h1>Reports and rooming lists </h1>
                    
           <p>The Supplier Portal provides an overview of various reports. Here you will find reservation lists and request (reports), but also rooming lists.</p>
-          <p>Depending on the agreements we have made with you, you have access to:</p>
-          <p>-  the reports<br>
-          -  the roominglists</p>
-
+          <p>Depending on the agreements we have made with you, you have access to.</p>
+          
           <p>It is not possible to work with both systems; you either work with reports or rooming lists.</p>
           
           <h2>A.  Reports</h2>
@@ -117,12 +132,16 @@
 
           <p>The name of the document consists of the date on which it was released. Reservation List 20210122 for example, tells us that this reservation list was made available on the 22 January 2021.</p>
 
-          <p>The other columns will give you more information on the size of the document, the date on which it was made available, and the earliest reservation date within that reservation list or request. The check mark in the last column will show whether the document has been opened by you, or your colleague. By clicking on one of these five headers, you can sort the list according to name, size, date, earliest reservation date, or whether the file has been opened or not.
+          <p>The other columns will give you more information on the size of the document, the date on which it was made available, and the earliest reservation date within that reservation list or request. The check mark in the last column will show whether the document has been opened by you, or your colleague.</p>
+
+          <p>By clicking on one of these five headers, you can sort the list according to name, size, date, earliest reservation date, or whether the file has been opened or not <i>(note: this is still a work in progress)</i>.
           </p>
 
           <P>When a new reservation has been made on our website, for which one or more elements need to be requested through you, then a ‘request’ will automatically be sent to you. You will also be notified about this on the ‘ANWB Messages’ page. When you open this PDF file, the first page contains an automated message, which will give you further instructions. </P>
 
           <p>The second page features the details of the reservation, and contains the following information:</p>
+
+          <p>When you open the reservation through 'Reservations' or 'Individuals' you can use the 'Approve Requests' button to confirm the reservation. It is also possible to confirm or decline the request per element. An automatic message will be sent to us. Please note that once you have confirmed the request, it will first have to be processed manually by us. Until then the reservation will still be visible as a request.</p>
 
          <p>- A header with the booking number, name of the party, booking date, name of the tour and status of the booking<br>
           - Details of the participants<br>

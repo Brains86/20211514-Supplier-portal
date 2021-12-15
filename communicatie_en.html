@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -95,13 +112,13 @@
 
         <div class="col-12 pt-3">
 
-          <h1>Communication via the Supplier Portal</h1>
+          <h1>Communication through the Supplier Portal</h1>
                    
-          <p>The Supplier Portal may take some getting used to, but in the long run it will be easier for everyone to have all communication about a reservation in one place. The main goal is to limit various emails by means of this Supplier Portal and to keep all communication clearly organized. How does it work?</p>
+          <p>TThe main goal of the Supplier Portal is to limit various emails by means of this Portal and to keep all communication clearly organized. How does it work?</p>
 
-          <p>When a new report or rooming list has been made available, or in the event of new, modified or cancelled reservations, you will automatically receive a notification on the ‘ANWB Messages’ page. This system works on a one-way traffic basis, whereby you are only able to receive messages. </p>
+          <p>When a new report or rooming list has been made available, or in the event of new, modified or cancelled reservations, you will automatically receive an email and a notification on the ‘ANWB Messages’ page. This system works on a one-way traffic basis, whereby you are only able to receive messages.</p>
 
-          <p>Within an individual reservation number however, you are able to communicate with our Operations department via the memo system. You can view the date and time of each memo, and the name of the employee who wrote the memo. Whenever a new memo has been sent by us, you will be notified via the ‘ANWB Messages’ page. When you reply to a message or add a new one, our Operations department will automatically be notified and respond if necessary.</p>
+          <p>Within an individual reservation number, you are able to communicate with our Operations department via the memo system. You can view the date and time of each memo, and the name of the employee who wrote the memo. Whenever a new memo has been sent by us, you will be notified by email and on the ‘ANWB Messages’ page. When you reply to a message or add a new one, our Operations department will automatically be notified and respond if necessary.</p>
 
           <p>There are a few available options:</p>
 

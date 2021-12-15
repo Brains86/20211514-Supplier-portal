@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+     <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
     
   </head>
 
@@ -139,7 +156,15 @@
           <br>
           <h2>Nieuw sinds november 2021:</h2>
 
-          <p>Wijzigingen worden gemarkeerd en er is een nieuwe knop voor de bevestiging van wijzigingen
+          <p><b>Excel export nu met uitgebreide reserveringsgegevens</b></p>
+
+          <P>Het is nu mogelijk om een uitgebreide export te downloaden van geselecteerde reserveringen. Via de pagina Individuals kun je als leverancier op basis van filters een lijst met reserveringen opzoeken. Via de ‘export naar excel’-knop wordt een excel lijst aangemaakt met daarin per reservering uitgebreide reserveringsgegevens: <br>
+          - Deelnemers <br>
+          - Elementen en service types (kamertype, verzorging) + periode </P>
+
+          <p>Zo kun je als leverancier makkelijk controleren of alles in je eigen systemen goed ingeboekt staat.</p>
+
+          <p>Wijzigingen worden gemarkeerd en er is een nieuwe knop voor de bevestiging van wijzigingen.
           Wanneer een reservering wordt gewijzigd door ANWB, zal in het reserveringsoverzicht nu de wijziging getoond worden door het veld te markeren. 
           Als eerdere informatie gewijzigd is, wordt de achtergrond oranje. Is eerdere informatie geannuleerd (verwijderd), wordt de achtergrond rood. Is er nieuwe informatie toegevoegd, wordt de achtergrond groen. Zie onderstaand voorbeeld.
           </p>
@@ -148,16 +173,14 @@
             <img src="assets/nieuw_nov_1.png">
           </div>
 
-          <p>Wijzigingen worden gemarkeerd en er is een nieuwe knop voor de bevestiging van wijzigingen
-          Wanneer een reservering wordt gewijzigd door ANWB, zal in het reserveringsoverzicht nu de wijziging getoond worden door het veld te markeren. 
-          Als eerdere informatie gewijzigd is, wordt de achtergrond oranje. Is eerdere informatie geannuleerd (verwijderd), wordt de achtergrond rood. Is er nieuwe informatie toegevoegd, wordt de achtergrond groen. Zie onderstaand voorbeeld.
+          <p>Bovenaan aan de rechterkant van het reserveringsoverzicht is een nieuwe knop toegevoegd [Confirm changes]
           </p>
 
           <div class="col-12 index">
             <img src="assets/nieuw_nov_2.png">
           </div>
 
-          <p>WWanneer een wijziging bevestigd wordt, zal er automatisch een bevestiging naar ANWB verzondern worden met het volgende bericht:<br>
+          <p>Wanneer een wijziging bevestigd wordt, zal er automatisch een bevestiging naar ANWB verzondern worden met het volgende bericht:<br>
           <i>Confirmed the changes on reservation <booking number> version 2</i><br><br>
           De versie is van belang voor de ANWB operations afdeling om te weten welke versie van de boeking er bevestigd / gezien is. 
           </p>

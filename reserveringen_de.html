@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
     
   </head>
 
@@ -103,7 +120,7 @@
           <p>Sie finden diese Informationen im Supplier Portal:</p>
 
           <p> A.  Informationen zu Teilnehmern/Mitgliedern <br>
-              B.  Informationen zu den gebuchten Artikeln <br>
+              B.  Leistungselemente / Informationen zu den gebuchten Artikeln <br>
               C.  Essenzen und Präferenzen/Kundenwünsche <br>
               D.  Zusätzliche Informationen zur Buchung <br>
               E.  Angaben zur Referenznummer <br>
@@ -113,17 +130,21 @@
 
           <p>Zu jeder Buchung werden alle Informationen, die wir zu den Teilnehmern haben, angezeigt. Aus Datenschutzgründen fordern wir bei unseren Kunden ein Mindestmaß an Daten an. Sollten Sie mehr Informationen als die bereitgestellten Daten benötigen, setzen Sie sich bitte mit uns in Verbindung. Wir schauen dann, ob wir die erbetenen Informationen bereitstellen können.</p>
 
-          <h2>B. Leistungselemente</h2>
+          <h2>B. Leistungselemente / Informationen zu den gebuchten Artikeln</h2>
 
           <p>Ein Leistungselement ist eine gebuchte Leistung. Dabei kann es sich um eine Gruppen- oder individuelle Reise, ein Hotel, einen Transfer, eine Verlängerung usw. handeln. Bitte berücksichtigen Sie, dass Sie nur die Leistungselemente sehen können, die an Sie als Leistungserbringer gekoppelt sind. Wenn wir beispielsweise über Urlaubsreiseangebote verfügen, in denen wir Leistungselemente verschiedener Leistungserbringer kombinieren, können Sie nur die Leistungselemente sehen, die Sie bereitgestellt haben.</p>
 
           <p>Dabei ist zudem zu berücksichtigen, dass nicht alle Leistungselemente von allen Teilnehmern gebucht werden. Bei einem Ausflug könnte es sich beispielsweise ergeben, dass nur einer der zwei Teilnehmer sich dafür entschieden hat, diesen zu buchen. Innerhalb des Supplier Portals können Sie sehen, welchen Teilnehmern die einzelnen Leistungselemente zugewiesen worden sind. Auch können Sie das Datum sehen, an dem die Leistungselemente gebucht worden sind.</p>
 
+          <p>In der Reservierung wird auch der Kaufpreis für das jeweilige Element angegeben.</p>
+
           <h2>C. Essenzen und Präferenzen/Kundenwünsche</h2>
 
           <p>Bei dem Posten Essenzen und Präferenzen handelt es sich um bestimmte Wünsche unserer Kunden. Manche dieser Punkte gelten möglicherweise für die gesamte Reisegesellschaft (zum Beispiel “Connecting rooms“, also benachbarte Zimmer), während andere nur für einzelne Personen zutreffen (beispielsweise „diabetic meals“ für Diabetiker). Innerhalb des Supplier Portals können Sie sehen, welchen Teilnehmern die einzelnen Wunschelemente zugewiesen wurden. </p>
 
-          <p>Sollten Sie einem Wunsch unserer Kunden nicht entsprechen können, lassen Sie uns dies bitte wissen, sodass wir diese informieren können. Bitte berücksichtigen Sie, dass es sich bei manchen Wünschen um lebensnotwendige Leistungselemente handeln kann, beispielsweise medizinische Notwendigkeiten. Wenn Sie solch einem Ersuchen nicht gerecht werden können, muss der betreffende Kunde die Buchung kostenlos stornieren können.</p>
+          <p>Eine Präferenz ist ein Wunsch des Kunden. Der Kunde ist sich bewusst, dass es sich um einen Wunsch handelt und dass daraus keine Rechte abgeleitet werden können. Wenn es eine Präferenz in der Reservierung gibt, braucht ANWB Reizen keine Rückmeldung dafür.</p>
+
+          <p>Bitte berücksichtigen Sie, dass es sich bei manchen Wünschen um lebensnotwendige Leistungselemente handeln kann, beispielsweise medizinische Essenzen. Wenn Sie solch einer Essenz nicht gerecht werden können, muss der betreffende Kunde die Buchung kostenlos stornieren können. Eine medizinische Essenz wird auch immer auf Anfrage sein, so dass die Reservierung nicht endgültig ist, bis diese Essenz bestätigt ist.
 
           <h2>D. Zusatzinformationen</h2>
 
@@ -136,7 +157,40 @@
           <div class="col-12 index">
             <img src="assets/reserveringen.png">
           </div>
+          <br>
+          <h2>Neu seit November 2021:</h2>
 
+          <p><b>Excel-Export jetzt mit erweiterten Reservierungsdaten:</b></p>
+
+          <P>Es ist jetzt möglich, einen umfangreichen Export ausgewählter Reservierungen herunterzuladen. Als Anbieter können Sie auf der Seite „Individuell“ nach einer Liste von Reservierungen auf der Grundlage von Filtern suchen. Über den 'Export to Excel'-Button wird eine Excel-Liste mit den pro Reservierung erweiterten Reservierungsdaten erstellt: <br>
+          - Teilnehmer <br>
+          - Elemente und Leistungsarten (Zimmertyp, Leistung) + Zeitraum</P>
+
+          <p>So können Sie als Anbieter leicht überprüfen, ob alles ordnungsgemäß in Ihren eigenen Systemen verbucht wurde.</p>
+
+          <h2>Auch werden Änderungen markiert und es gibt eine neue Schaltfläche für die Bestätigung von Änderungen.</h2>
+
+          <p>Wenn eine Reservierung durch ANWB geändert wird, wird die Änderung nun in der Reservierungsübersicht durch Markierung des Feldes angezeigt. 
+          Wenn frühere Informationen geändert wurden, färbt sich der Hintergrund orange. Wenn vorherige Informationen gelöscht werden, wird der Hintergrund rot. Wenn neue Informationen hinzugefügt wurden, wird der Hintergrund grün. Siehe das folgende Beispiel.
+          </p>
+
+          <div class="col-12 index">
+            <img src="assets/nieuw_nov_1.png">
+          </div>
+
+          <p>Eine neue Schaltfläche [„confirm changes“] wurde oben rechts in der Buchungsübersicht hinzugefügt:
+          </p>
+
+          <div class="col-12 index">
+            <img src="assets/nieuw_nov_2.png">
+          </div>
+
+          <p>Wenn eine Änderung bestätigt wird, wird automatisch eine Bestätigung an ANWB mit der folgenden Nachricht gesendet:<br>
+          <i>Confirmed the changes on reservation <booking number> version 2</i><br><br>
+          Die Version ist für die ANWB-Operationsabteilung wichtig, um zu wissen, welche Version der Buchung bestätigt / gesehen wurde. 
+          </p>
+
+        </div>
 
         </div>
 

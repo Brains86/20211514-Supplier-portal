@@ -47,7 +47,24 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
 
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
+    
   </head>
 
   <body>
@@ -97,11 +114,11 @@
 
           <h1>Communication par l’intermédiaire du Supplier Portal</h1>
                    
-          <p>Le Supplier Portal peut prendre un certain temps pour s'y habituer, mais à long terme, il sera plus facile pour tout le monde d'avoir toutes les communications concernant une réservation à portée de main. L'objectif principal est de limiter les divers e-mails «en vrac» au moyen de ce portail fournisseur et de garder toutes les communications clairement organisées. Comment cela fonctionne-t-il? </p>
+          <p>L'objectif principal du Supplier Portal est de limiter les divers e-mails «en vrac» au moyen de ce portail et de garder toutes les communications clairement organisées. Comment cela fonctionne-t-il?</p>
 
-          <p>Dès qu’un nouveau rapport ou une nouvelle « rooming list » est disponible, où dès qu’une nouvelle réservation, une modification ou une annulation est effectuée, vous recevez automatiquement une notification sur la page « ANWB Messages ». Ce système est à sens unique, ce qui signifie que vous pouvez uniquement recevoir des messages (mais pas y répondre). </p>
+          <p>Dès qu’un nouveau rapport ou une nouvelle « rooming list » est disponible, où dès qu’une nouvelle réservation, une modification ou une annulation est effectuée, vous recevez automatiquement un e-mail et une notification sur la page « ANWB Messages ». Ce système est à sens unique, ce qui signifie que vous pouvez uniquement recevoir des messages (mais pas y répondre). </p>
 
-          <p>Pour chaque numéro de réservation, vous pouvez toutefois communiquer avec notre service « Operations » par le biais des mémos. Vous pouvez voir la date et l’heure de chaque mémo et le nom de l’employé(e) qui l’a rédigé. Lorsque nous vous envoyons un nouveau mémo, vous recevez une notification sur la page « ANWB Messages ». Lorsque vous répondez à un message ou que vous en ajoutez un nouveau, notre service « Operations » en est automatiquement informé et vous répondra si nécessaire.</p>
+          <p>Pour chaque numéro de réservation, vous pouvez communiquer avec notre service « Operations » par le biais des mémos. Vous pouvez voir la date et l’heure de chaque mémo et le nom de l’employé(e) qui l’a rédigé. Lorsque nous vous envoyons un nouveau mémo, vous recevez un e-mail et une notification sur la page « ANWB Messages ». Lorsque vous répondez à un message ou que vous en ajoutez un nouveau, notre service « Operations » en est automatiquement informé et vous répondra si nécessaire.</p>
 
           <p>Il y a plusieurs choses que vous pouvez faire pour communiquer par le biais du Supplier Portal :</p>
 
@@ -119,7 +136,7 @@
 
           <p>En outre, en cliquant sur ce bouton, la notification du message reçu sur la page "Messages ANWB" disparaît. Il est ainsi plus facile de garder une bonne vue d'ensemble sur cette page spécifique. </p>
 
-          <h2>D.  Ajouter une note interneD.  </h2>
+          <h2>D.  Ajouter une note interne.  </h2>
 
           <p>Si vous souhaitez noter certaines informations pour vous-même ou vos collègues sans nous envoyer de message, vous pouvez ajouter une note interne. Cette note ne sera visible que pour vous et vos collègues, pas pour nous. Cliquez sur le bouton « Add an Internal note » pour ouvrir un champ de texte. Une fois que vous avez saisi les informations, cliquez sur « OK » pour les enregistrer.</p>
 

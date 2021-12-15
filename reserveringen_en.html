@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
     
   </head>
 
@@ -103,7 +120,7 @@
           <p>You can find this information in the Supplier Portal:</p>
 
           <p> A.  Information about participants/members <br>
-              B.  Information about the booked items <br>
+              B.  Elements / information about the booked items <br>
               C.  Essences and preferences/customer requests <br>
               D.  Extra information about the booking <br>
               E.  Information about the reference number <br>
@@ -113,15 +130,19 @@
 
           <p>All the information we hold that is associated with participants is displayed within a reservation. We request as little information as possible from our clients due to privacy legislation. If you need additional information beyond the details provided, then please feel free to contact us, and we will check whether we are able to provide your requested information.</p>
 
-          <h2>B. Elements</h2>
+          <h2>B. Elements / information about the booked items</h2>
 
           <p>An element is a booked item. This could represent a group tour or individual tour, a hotel, a transfer, an extra item, or an extension etc. Please note that you are only able to view those elements that are relevant to you as a supplier; for example, if we have tours where elements of different suppliers are combined, then you will only be able to see those elements that are being provided by you. </p>
 
           <p>Please note that it might be possible that not all elements have been booked by all of the participants. In case of an excursion for example, perhaps only 1 out of 2 participants might have chosen to book it. Within the Supplier Portal, you will be able to view to which participants elements have been assigned. You can also view the dates that those elements were booked.</p>
 
+          <p>The reservation also shows the purchase price for the respective element.</p>
+
           <h2>C. Essences and preferences/customer requests</h2>
 
-          <p>Essences and preferences represent certain requests from our customers. Some might be applicable for the entire party (‘connecting rooms’ for example), while others are only applicable for specific individuals (‘diabetic meals’ for example). Within the Supplier Portal, you are able to view those participants to which the requests are assigned. If you are not able to comply with a request from our customers, please let us know so we can inform them. Please note that some requests can be essential for a client, such as medical necessities. If you are not able to comply with a request, then a client should be able to cancel the booking without incurring any costs.</p>
+          <p>Essences and preferences represent certain requests from our customers. Some might be applicable for the entire party (‘connecting rooms’ for example), while others are only applicable for specific individuals (‘diabetic meals’ for example). Within the Supplier Portal, you are able to view those participants to which the requests are assigned. </p>
+
+          <p>A preference is a wish of the customer. The customer is aware that this is a wish and that no rights can be derived from this. If there is a preference in the reservation, ANWB Reizen does not need feedback for this. Please note that some requests can be essential for a client, such as medical essences. If you are not able to comply with such an essence, then a client should be able to cancel the booking without incurring any costs. A medical essence will also always be on request, so the reservation is not final until this essence is confirmed.</p>
 
           <h2>D. Extra information</h2>
 
@@ -134,6 +155,38 @@
           <div class="col-12 index">
             <img src="assets/reserveringen.png">
           </div>
+
+          <h2>New since November 2021:</h2>
+
+          <p><b>Excel export now with extended reservation data</b></p>
+
+          <P>It is now possible to download an extensive export of selected reservations. As a supplier, you can use the Individuals page to search for a list of reservations based on filters. Through the 'export to excel'-button an excel list is made with per reservation extended reservation data: <br>
+          - Participants  <br>
+          - Elements and service types (room type, service) + period</P>
+
+          <p>This way, as a supplier, you can easily check whether everything has been properly registered in your own systems.</p>
+
+          <p>Changes are marked and there is a new button to confirm changes
+          When a reservation is changed by ANWB, the change will now be shown in the reservation overview by marking the field. 
+          If previous information has been changed, the background will turn orange. If previous information is cancelled (deleted), the background will become red. If new information has been added, the background will turn green. See below : 
+
+          </p>
+
+          <div class="col-12 index">
+            <img src="assets/nieuw_nov_1.png">
+          </div>
+
+          <p>On top of the right side of the booking overview a new button has been added [Confirm changes].
+          </p>
+
+          <div class="col-12 index">
+            <img src="assets/nieuw_nov_2.png">
+          </div>
+
+          <p>When a change is confirmed, a confirmation will automatically be sent to ANWB with the following message:<br>
+          <i>Confirmed the changes on reservation <booking number> version 2</i><br><br>
+          The version is important for the ANWB operations department to know which version of the booking has been confirmed / seen.
+          </p>
 
 
         </div>

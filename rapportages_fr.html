@@ -48,7 +48,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
 
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -103,9 +119,8 @@
           <h1>Rapports et Roominglists </h1>
                    
           <p>Le Supplier Portal donne un aperçu de différents rapports. Vous y trouverez des listes de réservations et des demandes (‘Reports’), mais aussi des listes de chambres (‘Roominglists’).</p>
-          <p>En fonction de ce que nous avons convenu avec vous, vous aurez accès à</p>
-          <p>-  « Reports » (rapports)<br>
-          - « Rooming lists » (listes de chambres) </p>
+          <p>En fonction de ce que nous avons convenu avec vous, vous aurez accès à l’un des deux.</p>
+          
 
           <p>Il n'est pas possible de travailler avec les deux systèmes; vous travaillez soit avec des rapports soit avec des listes de chambres.</p>
           
@@ -115,7 +130,7 @@
           <p>-  des listes de réservation (Reservationlists)<br>
           - des demandes (Requests) </p>
 
-          <p>Le nom du document est composé de la date à laquelle il a été publié. « ReservationLists20210122 » par exemple, vous indique que cette liste de réservation a été publiée le 22 janvier 2021. Les autres colonnes vous donnent plus d'informations sur la taille du document, la date d'émission et la date de réservation la plus proche dans cette liste ou demande de réservation. La coche de la dernière colonne indique si le document a été ouvert par vous ou par votre collègue. En cliquant sur l'une de ces cinq rubriques, vous pouvez trier la liste par nom, taille, date, date de réservation la plus ancienne ou si le fichier a été ouvert ou non.</p>
+          <p>Le nom du document est composé de la date à laquelle il a été publié. « ReservationLists20210122 » par exemple, vous indique que cette liste de réservation a été publiée le 22 janvier 2021. Les autres colonnes vous donnent plus d'informations sur la taille du document, la date d'émission et la date de réservation la plus proche dans cette liste ou demande de réservation. La coche de la dernière colonne indique si le document a été ouvert par vous ou par votre collègue. En cliquant sur l'une de ces cinq rubriques, vous pouvez trier la liste par nom, taille, date, date de réservation la plus ancienne ou si le fichier a été ouvert ou non<i> (Note : ceci est toujours en cours d'élaboration, cela ne fonctionne pas encore pour le moment)</i>.</p>
 
           <p>Lorsqu’une nouvelle réservation est effectuée sur notre site Web et qu’un ou plusieurs éléments de cette réservation doivent être validés par vous, vous recevez automatiquement une « Request » (demande de validation). Vous recevrez également une notification sur la page « ANWB Messages ». Lorsque vous ouvrez ce fichier pdf, la première page contient un message automatique vous indiquant ce que vous devez faire.  
           </p>
@@ -128,6 +143,8 @@
           - les essences & préférences des participants <br>
           - des informations additionnelles, le cas échéant<br>
           </p>
+
+          <p>Lorsque vous ouvrez la réservation via "Réservations" ou "Individuals", vous pouvez utiliser le bouton "Approve Requests" pour confirmer la réservation. Il est également possible de confirmer ou de refuser la demande par élément. Un message automatique nous sera envoyé. Veuillez noter qu'une fois que vous aurez confirmé la demande, celle-ci devra d'abord être traitée manuellement par nos soins. En attendant, la réservation sera toujours visible en tant que demande.</p>
 
           <p>Lorsque de nouvelles réservations sont effectuées sur notre site web et qu’aucun élément ne doit être au préalable validé par vous (parce que les éléments réservés font partie des éléments confirmés automatiquement sur la base de votre contrat), vous recevez une « Reservationlist » (liste de réservations).</p>
                   

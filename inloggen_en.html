@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -99,11 +116,11 @@
 
               <h1>Email account login</h1>
                        
-              <p>Every ANWB Reizen user will receive an activation email containing a link to activate your account in the Supplier Portal via <a href="https://supplier.anwbreizen.nl/Account/" target="_blank">supplier.anwbreizen.nl</a> If you have not received this activation email, please check your spam box to be sure.</p>
+              <p>Every ANWB Reizen user will receive an activation email containing a link to activate your account in the Supplier Portal via <a href="https://supplier.anwbreizen.nl/Account/" target="_blank">supplier.anwbreizen.nl</a>. If you have not received this activation email, please check your spam box to be sure.</p>
 
-              <p>If you have not received an email at all, please send an email to <a href="mailto:supplierportal@anwbreizen.nl">supplierportal@anwbreizen.nl</a>.</p>
+              <p>If you have not received an email at all, please contact the Operations department that is responsible for your destination.</p>
 
-              <p>Generally, one account per supplier will be created. The information is confidential, so we assume that sufficient care is taken at all times when handling these details. You can only log in to the supplier portal with 1 specific email address.</p>
+              <p>One account per supplier will be created. The information is confidential, so we assume that sufficient care is taken at all times when handling these details. You can only log in to the supplier portal the email address that has been activated for the Supplier Portal.</p>
 
               <img src="assets/inloggen.png">
             </div>

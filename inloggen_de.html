@@ -47,6 +47,23 @@
 
       gtag('config', 'G-JXRSX5EKX7');
     </script>
+    <script type='text/javascript'>
+
+    (function()
+    {
+      if( window.localStorage )
+      {
+        if( !localStorage.getItem('firstLoad') )
+        {
+          localStorage['firstLoad'] = true;
+          window.location.reload();
+        }  
+        else
+          localStorage.removeItem('firstLoad');
+      }
+    })();
+
+    </script>
 
   </head>
 
@@ -101,9 +118,9 @@
                        
               <p>Jeder Benutzer von ANWB Reizen erhält eine E-Mail mit einem Aktivierungslink (in englischer Sprache) um Ihr Konto im Supplier Portal zu aktivieren über <a href="https://supplier.anwbreizen.nl/Account/" target="_blank">supplier.anwbreizen.nl</a> Wenn Sie diese Aktivierungs-E-Mail nicht erhalten haben, überprüfen Sie sicherheitshalber bitte Ihr Spam-Fach.</p>
 
-              <p>Wenn Sie keine E-Mail erhalten haben, senden Sie bitte eine E-Mail an <a href="mailto:supplierportal@anwbreizen.nl">supplierportal@anwbreizen.nl</a>.</p>
+              <p>Wenn Sie keine E-Mail erhalten haben, senden Sie bitte eine E-Mail an das Ihnen bekannte Operationsteam.</p>
 
-              <p>Grundsätzlich wird pro Lieferant ein Konto angelegt. Die Informationen sind vertraulich, daher gehen wir davon aus, dass sie mit Sorgfalt behandelt werden. Sie können sich nur mit einer bestimmten E-Mail-adresse beim Lieferantenportal anmelden. </p>
+              <p>Pro Lieferant wird Lieferant ein Konto angelegt. Die Informationen sind vertraulich, daher gehen wir davon aus, dass sie mit Sorgfalt behandelt werden. Sie können sich nur mit der bestimmten E-Mail-adresse beim Lieferantenportal anmelden, die dafür aktiviert wurde.</p>
 
               <img src="assets/inloggen.png">
             </div>
